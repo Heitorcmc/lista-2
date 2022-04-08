@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+  int N, NEG=0, POS=0, ZERO=0;
+  printf("escreva uma sequencia de valores inteiros\n");
+  do { // o do while vai ser usado para escanear os numeros da sequencia e adicionar se o numero é positivo negativo ou igual a zero ate que o operador digite 123 que é o codigo para parar a repetiçao
+    scanf ("%d", &N);
+    if (N<0) {
+      NEG++;
+    } else if (N ==0) {
+      ZERO++;
+    } else{
+      POS++;
+    }
+  } while ( N != 123);
+  printf ("A quantidade de negativos:%d", NEG);
+  printf ("\nA quantidade de positivos:%d", POS);
+  printf ("\nA quantidade de zeros:%d", ZERO);
+  return 0;
+}
