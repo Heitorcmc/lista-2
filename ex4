@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  int N, quant;
+  double E=1, fat=1;
+
+  printf("Digite o valor de N: ");
+  scanf("%d", &N);
+
+  for (quant=1; quant<=N; quant++){ //repeticao enquanto o numero for menor que o colocado pelo usuario
+    fat= fat*quant;
+    E= E+1/(fat);
+  }
+  printf ("\nO valor de E é %.9lf",E);
+  return 0;
+}
