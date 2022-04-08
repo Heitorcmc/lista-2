@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+ int num,p2=0,p9=0,p5=0,i=0;
+  while (i<=10){ //repeticao enquanto nao chega a 10 numeros
+    printf("\n Informe o numero: ");
+    scanf("%d", &num);
+    p2 +=num%2==0 &&num;
+    p5 +=num%5==0 &&num;
+    p9 +=num%9==0 &&num;
+    if (num%5 && num%9 && num%2 || num==0){
+      printf("Numero nao e divisivel pelos valores");
+    }
+    i++;
+  }
+  printf (" quantidade de numeros divisiveis por 2: %d\n", p2);
+  printf (" quantidade de numeros divisiveis por 5: %d\n", p5);
+  printf (" quantidade de numeros divisiveis por 9: %d\n", p9);
+ 
+  return 0;
