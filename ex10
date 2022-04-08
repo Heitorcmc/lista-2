@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void) {
+  int cod, votos1=0,votos2=0,votos3=0,votos4=0,votos5=0,votos6=0;
+  
+  printf("Digite 0 para iniciar: ");
+  scanf("%d",&cod);
+
+  while (cod>=0 && cod<7)
+  {
+    printf("Digite o código: ");
+    scanf("%d",&cod);
+
+  if (cod==1) 
+  {
+    votos1++;
+  }
+  else if (cod==2)
+  {
+    votos2++;
+  }
+  else if (cod==3)
+  {
+    votos3++;
+  }
+  else if (cod==4)
+  {
+    votos4++;
+  }
+  else if (cod==5)
+  {
+    votos5++;
+  }
+  else if (cod==6)
+  {
+    votos6++;
+  }
+  } // fim do if
+  
+  
+  printf("\nForam %d votos no candidato 1",votos1);
+  printf("\nForam %d votos no candidato 2",votos2);
+  printf("\nForam %d votos no candidato 3",votos3);
+  printf("\nForam %d votos no candidato 4",votos4);
+  printf("\nForam %d votos nulos",votos5);
+  printf("\nForam %d votos em branco",votos6);
+  return 0;
+}
